@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>From Natural Alignment to Conditional Controllability in Multimodal Dialogue</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">From Natural Alignment to Conditional Controllability in Multimodal Dialogue</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <span class="author-block">Anonymous</span>
+                <!-- <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                  </span> -->
+                  </div>
+
+                  <!-- <div class="is-size-5 publication-authors">
+                    <span class="author-block">Institution Name<br>Conferance name and year</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div> -->
+
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser pic-->
+<section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Overview</h2>
+        </div>
+      </div>      
+      <div class="hero-body">
+        <img src="static/images/teaser.png" alt="MM-Dia Teaser" id="tree" style="max-width: 100%; height: auto;">
+        <h2 class="subtitle has-text-left">
+            <strong>Left:</strong> Example of a movie dialogue clip with sentence- and dialogue-level annotations in the MM-Dia and MM-Dia-Bench datasets, highlighting multimodal dialogue interaction details. 
+            <br><strong>Right:</strong> Three dialogue-related cross-modal generation tasks involving text, audio, and vision, with both explicit (Task 1) and implicit control (Task 2, Task 3).
+        </h2>
+      </div>
+    </div>
+  </section>
+  
+<!-- End teaser pic -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The recent advancement of Artificial Intelligence Generated Content (AIGC) has led to significant strides in modeling human interaction, particularly in the context of multi-modal dialogue.
+            While current methods impressively generates realistic dialogue in speech and vision modalities, challenges remain in multi-modal conditional dialogue generation.
+            This paper focuses on the natural alignment between speech, vision, and text in human interaction, aiming at expressive dialogue generation through multi-modal conditional control.
+            Since existing datasets lack the richness and diversity in dialogue expressiveness, we introduce a novel multi-modal dialogue annotation pipeline to exploit meaningful dialogues from movies and TV series with fine-grained annotations across multi-modalities.
+            The resultant dataset, <b>MM-Dia</b>, provides over 360 hours and 54,700 dialogues, facilitating the <b>Multimodal Dialogue Generation</b> task through explicit control over style-controllable dialogue speech synthesis.
+            While the proposed benchmark, <b>MM-Dia-Bench</b>, containing 309 dialogues that are highly expressive with visible dual/single speaker scenes, supports the evaluation of implicit cross-modal control through downstream multi-modal dialogue generation tasks to assess the audio-visual style consistency across modalities.
+            Our experiments <b>demonstrate the effectiveness of our data in enhancing style controllability and reveal limitations in current frameworks' ability to replicate human interaction expressiveness</b>, providing new insights and challenges for multi-modal conditional dialogue generation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<section class="section hero is-small">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">MM-Dia & MM-Dia-Bench</h2>
+        </div>
+      </div>      
+      <div class="hero-body">
+        <img src="static/images/pipeline.png" alt="MM-Dia Pipeline" id="tree" style="max-width: 100%; height: auto;">
+        <h2 class="subtitle has-text-left">
+            <strong>Data curation pipeline.</strong> Framework of the Movie/TV-sourced in-the-wild data curation pipeline for multi-modal dialogue extraction with fine-grained interaction-level annotations, including versions of dialogue <strong>Affective Triplet</strong> and <strong>Description</strong>.  
+            MM-Dia is the first dataset to specifically center on dialogue expressiveness across multiple modalities.
+        </h2>
+      </div>
+    </div>
+
+        <div class="container is-max-desktop">
+      <div class="columns is-vcentered">
+  
+        <!-- 右侧：静态图片 -->
+        <div class="column is-half">
+            <!-- <h2 class="title is-4">Related Image</h2> -->
+            <figure>
+              <img src="static/images/details-all.png" alt="A descriptive alt text for the image">
+            </figure>
+          </div>
+
+        <!-- 左侧：可交互的旭日图组件 -->
+        <div class="column is-half">
+          <!-- <h2 class="title is-4">Interactive Sunburst Chart</h2> -->
+          <div class="box" style="padding: 0; overflow: hidden;">
+            <iframe 
+              src="static/images/sunburst-relationship-interaction-.html" 
+              style="width: 100%; height: 400px; border: none;"
+              title="Interactive Sunburst Chart">
+            </iframe>
+          </div>
+        </div>
+      </div>
+        <h2 class="subtitle has-text-left">
+        <strong> Upper Left: Detailed statistics of MM-Dia and MM-Dia-Bench.</strong> While both corpus contain highly-expressvie dialogue clips, MM-Dia-Bench is further filtered to ensure the presence of visible dual speakers with strong emotional expression.
+        <br><strong> Lower Left: Word cloud of non-verbal annotations. </strong> MM-Dia consists of diverse annotation in non-verbal audio sounds, due to the rich source of scenarios from movies and TV series.
+        <br><strong> Right: Relationship × Interaction Sunburst Chart.</strong> The dialogue affective triplet annotations are further categorized into 8 relationship types and 12 interaction types, providing a comprehensive understanding of dialogue dynamics.
+        </h2>
+    </div>
+  </section>
+
+  <!-- 
+  将此代码块放在您希望展示组件和图片的位置。
+  它会创建一个容器，左侧是可交互的旭日图，右侧是静态图片。
+-->
+<section class="hero is-small">
+
+  </section>
+  
+
+<!-- Youtube video -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3 has-text-centered">Task 1: Style-Controllable Dialogue Speech Synthesis</h2>
+
+      <h3 class="subtitle is-4 has-text-centered"><br><strong>1. <u>In-domain</u> dialogue speech synthesis with <u>Description</u> as style prompt. </strong></h3>
+      <div class="table-content">
+        <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+          <thead>
+            <tr>
+              <th style="text-align: center">Style Prompt</th>
+              <th style="text-align: center">Transcript</th>
+              <th style="text-align: center">Synthezied Dialogue Speech <br>(Higgs Audio v2)</th>
+              <th style="text-align: center">Synthezied Dialogue Speech <br>(Trained on MM-Dia)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="text-align: left">The Mother Abbess delivers her command with a calm finality, prompting Maria to gasp and then plead in a desperate, tumbling rush of words.</td>
+              <td style="text-align: left">
+                [Mother Abbess] Maria. It seems to be the will of God that you leave us.
+                <br>[Maria] Leave?
+                <br>[Mother Abbess] Only for a while, Maria.
+                <br>[Maria] Oh, no, Mother, please don't do that. Don't send me away. <distressed> This is where I belong. It’s my home, my family. It’s my life.
+                <br>[Mother Abbess] But are you truly ready for it?
+                <br>[Maria] Yes, I am.
+              </td>
+              <td style="text-align: center"><audio controls=""><source src="static/wavs/task1/output_tt0059742_clip_19_higgs-base.wav" type="audio/mpeg" /></audio></td>
+              <td style="text-align: center"><audio controls=""><source src="static/wavs/task1/output_tt0059742_clip_19_higgs-sft.wav" type="audio/mpeg" /></audio></td>
+            </tr>
+            <tr>
+              <td style="text-align: left">Forrest's steady, simple questions are met with Jenny's quiet, sad deflections, creating a conversation full of heavy, painful pauses.</td>
+              <td style="text-align: left">
+                [Forrest] Will you marry me? I'd make a good husband, Jenny.
+                <br>[Jenny] You would, Forrest.
+                <br>[Forrest] But you won't marry me.
+                <br>[Jenny] You don't want to marry me.
+                <br>[Forrest] Why don't you love me, Jenny?
+              </td>
+              <td style="text-align: center"><audio controls=""><source src="static/wavs/task1/output_tt0109830_clip_190_higgs-base.wav" type="audio/mpeg" /></audio></td>
+              <td style="text-align: center"><audio controls=""><source src="static/wavs/task1/output_tt0109830_clip_190_higgs-sft.wav" type="audio/mpeg" /></audio></td>
+            </tr>
+            <tr>
+              <td style="text-align: left">Friends Willy and Rusty erupt in joyous, loud shouts, feeding off each other's gleeful excitement.</td>
+              <td style="text-align: left">
+                [Grover Cleaver] Willard, clear my salad plate!
+                <br>[Willard Filmore] Yeah, well, lick me, you old bag!
+                <br>[Grover Cleaver] Your busboy's gone to Bermuda! We're going to Bali, so I can date her.
+                <br>[Willard Filmore] Yeah!
+                <br>[Grover Cleaver] Get some Bali booty. ♪ I'm gonna get some Bali booty ♪
+              </td>
+              <td style="text-align: center"><audio controls=""><source src="static/wavs/task1/output_tt0156323_clip_90_higgs-base.wav" type="audio/mpeg" /></audio></td>
+              <td style="text-align: center"><audio controls=""><source src="static/wavs/task1/output_tt0156323_clip_90_higgs-sft.wav" type="audio/mpeg" /></audio></td>
+            </tr>
+            <tr>
+              <td style="text-align: left">Areida persistently questions a defensive Ella, their denials overlapping quickly until Ella finally gives in with an annoyed huff.</td>
+              <td style="text-align: left">
+                [Areida] Where were you?
+                <br>[Ella] Oh. I met the prince.
+                <br>[Areida] You met the prince? 
+                <br>[Ella] I don't wanna talk about it. Olive and Hattie were there.
+                <br>[Areida] Hattie. Why do you always do what Hattie tells you to do?
+                <br>[Ella] I don't.
+                <br>[Areida] Yes, you do. 
+                <br>[Ella] I don't.
+                <br>[Areida] Tell the truth.
+                <br>[Ella] Oh, I do. <sigh>
+              </td>
+              <td style="text-align: center"><audio controls=""><source src="static/wavs/task1/output_tt0327679_clip_43_higgs-base.wav" type="audio/mpeg" /></audio></td>
+              <td style="text-align: center"><audio controls=""><source src="static/wavs/task1/output_tt0327679_clip_43_higgs-sft.wav" type="audio/mpeg" /></audio></td>
+            </tr>
+            <tr>
+              <td style="text-align: left">Monica speaks with frantic, escalating panic and accusation, while Ethan responds with calm amusement and playful defiance.</td>
+              <td style="text-align: left">
+                [Monica] What we did was wrong. oh, god. I just had sex with someone who wasn't alive during the bicentennial. i just had sex. Ethan, focus. how could you not tell me?
+                <br>[Young Ethan] You never told me how old you were.
+                <br>[Monica] Well, that's different. My lie didn't make one of us a felon in 48 states. What were you thinking?
+                <br>[Young Ethan] I wasn't. I was too busy falling...
+                <br>[Monica] Don't say it.
+                <br>[Young Ethan] in love with you.
+                <br>[Monica] Well, fall out of it. You know, you shouldn't even be here. It's a school night. Oh, god. Oh, god. I'm like those women that you see with shiny guys named chad. I'm joan collins.
+              </td>
+              <td style="text-align: center"><audio controls=""><source src="static/wavs/task1/output_mc_eiu_en_151_higgs-base.wav" type="audio/mpeg" /></audio></td>
+              <td style="text-align: center"><audio controls=""><source src="static/wavs/task1/output_mc_eiu_en_151_higgs-sft.wav" type="audio/mpeg" /></audio></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="site-footer-item">
+          <!-- <a href="#top">Back To Top</a> -->
+        </div>
+        </div>
+
+
+        <h3 class="subtitle is-4 has-text-centered"><br><strong>2. <u>Out-of-domain</u> dialogue speech synthesis with <u>Affectie Triplet</u> as style prompt, with <u>Variable Control</u>. </strong></h3>
+        <div class="table-content">
+          <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+            <thead>
+              <tr>
+                <th style="text-align: center">Style Prompt</th>
+                <th style="text-align: center">Transcript</th>
+                <th style="text-align: center">Synthezied Dialogue Speech <br>(Higgs Audio v2)</th>
+                <th style="text-align: center">Synthezied Dialogue Speech <br>(Trained on MM-Dia)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align: left"><strong>Relationship: Lovers</strong>
+                    <br>Interaction Type: Frequent interruptions
+                    <br>Emotional State: Irritated impatience
+                </td>
+                <td style="text-align: left">
+                    [SPEAKER0] You don’t understand, you keep twisting my words—just let me explain.
+                    <br>[SPEAKER1] Oh, here we go again, another excuse. I’ve heard it all before.
+                    <br>[SPEAKER0] <strong>Please, listen, if you’d just give me a second, I can clear this up.</strong>
+                    <br>[SPEAKER1] No, you always say that, and it never changes anything.
+                </td>
+                <td style="text-align: center"><audio controls=""><source src="static/wavs/task1/output_tt0059742_clip_19_higgs-base.wav" type="audio/mpeg" /></audio></td>
+                <td style="text-align: center"><audio controls=""><source src="static/wavs/task1/output_tt0059742_clip_19_higgs-sft.wav" type="audio/mpeg" /></audio></td>
+              </tr>
+              <tr>
+                <td style="text-align: left"><strong>Relationship: Employer-employee</strong>
+                    <br>Interaction Type: Frequent interruptions
+                    <br>Emotional State: Irritated impatience</td>
+                <td style="text-align: left">
+                    [SPEAKER0] This report is full of mistakes. Do you even review your work?
+                    <br>[SPEAKER1] <strong>Please, listen, if you’d just give me a second, I can clear this up.</strong>
+                    <br>[SPEAKER0] I don’t need excuses, I need results.
+                    <br>[SPEAKER1] It’s not an excuse, it’s context you don’t have yet.
+                </td>
+                <td style="text-align: center"><audio controls=""><source src="static/wavs/task1/output_tt0109830_clip_190_higgs-base.wav" type="audio/mpeg" /></audio></td>
+                <td style="text-align: center"><audio controls=""><source src="static/wavs/task1/output_tt0109830_clip_190_higgs-sft.wav" type="audio/mpeg" /></audio></td>
+              </tr>
+              <tr>
+                <td style="text-align: left"><strong>Relationship: Police-Criminal</strong>
+                    <br>Interaction Type: Frequent interruptions
+                    <br>Emotional State: Irritated impatience</td>
+                <td style="text-align: left">
+                    [SPEAKER0] We’ve got your fingerprints at the scene—stop wasting my time.
+                    <br>[SPEAKER1] <strong>Please, listen, if you’d just give me a second, I can clear this up.</strong>
+                    <br>[SPEAKER0] Every suspect says that. The –evidence is already against you.
+                    <br>[SPEAKER1] You don’t have the whole story, and that’s what I need to tell you.
+                </td>
+                <td style="text-align: center"><audio controls=""><source src="static/wavs/task1/output_tt0156323_clip_90_higgs-base.wav" type="audio/mpeg" /></audio></td>
+                <td style="text-align: center"><audio controls=""><source src="static/wavs/task1/output_tt0156323_clip_90_higgs-sft.wav" type="audio/mpeg" /></audio></td>
+              </tr>
+              <tr>
+                <td style="text-align: left">Relationship: Friends
+                    <br><strong>Interaction Type: Questioning</strong>
+                    <br>Emotional State: Irritated impatience</td>
+                <td style="text-align: left">
+                    [SPEAKER0] How could you make such a mistake! <strong>You’re always an expert on it.</strong> 
+                    <br>[SPEAKER1] Because things went wrong faster than I could fix them, that’s why.
+                    <br>[SPEAKER0] So what, you just forgot everything you brag about knowing?
+                    <br>[SPEAKER1] No, I just didn’t expect you to jump on me instead of helping.
+                </td>
+                <td style="text-align: center"><audio controls=""><source src="static/wavs/task1/output_tt0327679_clip_43_higgs-base.wav" type="audio/mpeg" /></audio></td>
+                <td style="text-align: center"><audio controls=""><source src="static/wavs/task1/output_tt0327679_clip_43_higgs-sft.wav" type="audio/mpeg" /></audio></td>
+              </tr>
+              <tr>
+                <td style="text-align: left">Relationship: Friends
+                    <br><strong>Interaction Type: Sarcasm</strong>
+                    <br>Emotional State: Irritated impatience</td>
+                <td style="text-align: left">
+                  [Monica] What we did was wrong. oh, god. I just had sex with someone who wasn't alive during the bicentennial. i just had sex. Ethan, focus. how could you not tell me?
+                  [SPEAKER0] You never just let things go, do you?
+                  <br>[SPEAKER1] <strong>You‘re always an expert on it</strong>, aren’t you?
+                  <br>[SPEAKER0] I’m serious—can’t you stop acting like you know everything?
+                  <br>[SPEAKER1] Maybe if you stopped nagging, I wouldn’t have to!
+                </td>
+                <td style="text-align: center"><audio controls=""><source src="static/wavs/task1/output_mc_eiu_en_151_higgs-base.wav" type="audio/mpeg" /></audio></td>
+                <td style="text-align: center"><audio controls=""><source src="static/wavs/task1/output_mc_eiu_en_151_higgs-sft.wav" type="audio/mpeg" /></audio></td>
+              </tr>
+              <tr>
+                <td style="text-align: left">Relationship: Friends
+                    <br><strong>Interaction Type: Comforting</strong>
+                    <br>Emotional State: Irritated impatience</td>
+                <td style="text-align: left">
+                    [SPEAKER0] I can’t keep doing this anymore… it’s exhausting.
+                    <br>[SPEAKER1] Don’t give up—come on, <strong>you’re always an expert on it.</strong>
+                    <br>[SPEAKER0] That’s not helping, you don’t understand how draining this is.
+                    <br>[SPEAKER1] I do understand, but if you just push through a little longer, you’ll make it.
+                </td>
+                <td style="text-align: center"><audio controls=""><source src="static/wavs/task1/output_tt0327679_clip_43_higgs-base.wav" type="audio/mpeg" /></audio></td>
+                <td style="text-align: center"><audio controls=""><source src="static/wavs/task1/output_tt0327679_clip_43_higgs-sft.wav" type="audio/mpeg" /></audio></td>
+              </tr>
+              <tr>
+                <td style="text-align: left">Relationship: Friends
+                    <br>Interaction Type: Chat
+                    <br><strong>Emotional State: Excited and then cried with joy</strong></td>
+                <td style="text-align: left">
+                    [SPEAKER0] Guess what, the tickets finally came through!
+                    <br>[SPEAKER1] <strong>I’ve been waiting for this moment forever.</strong>
+                    <br>[SPEAKER0] I can tell, you’re practically glowing.
+                    <br>[SPEAKER1] It’s everything I’ve dreamed about...
+                </td>
+                <td style="text-align: center"><audio controls=""><source src="static/wavs/task1/output_tt0327679_clip_43_higgs-base.wav" type="audio/mpeg" /></audio></td>
+                <td style="text-align: center"><audio controls=""><source src="static/wavs/task1/output_tt0327679_clip_43_higgs-sft.wav" type="audio/mpeg" /></audio></td>
+              </tr>
+              <tr>
+                <td style="text-align: left">Relationship: Friends
+                    <br>Interaction Type: Chat
+                    <br><strong>Emotional State: Calm, then turned into sadness</strong></td>
+                <td style="text-align: left">
+                    [SPEAKER0] Guess what, the tickets finally came through!
+                    <br>[SPEAKER1] <strong>I’ve been waiting for this moment forever.</strong>
+                    <br>[SPEAKER0] I can tell, you’re practically glowing.
+                    <br>[SPEAKER1] It’s everything I’ve dreamed about...
+                </td>
+                <td style="text-align: center"><audio controls=""><source src="static/wavs/task1/output_tt0327679_clip_43_higgs-base.wav" type="audio/mpeg" /></audio></td>
+                <td style="text-align: center"><audio controls=""><source src="static/wavs/task1/output_tt0327679_clip_43_higgs-sft.wav" type="audio/mpeg" /></audio></td>
+              </tr>
+              <tr>
+                <td style="text-align: left">Relationship: Friends
+                    <br>Interaction Type: Chat
+                    <br><strong>Emotional State: Growing frustration to anger</strong></td>
+                <td style="text-align: left">
+                    [SPEAKER0] Why are you making such a big deal about it?
+                    <br>[SPEAKER1] You don’t get it—<strong>I’ve been waiting for this moment forever.</strong>
+                    <br>[SPEAKER0] Okay, but you don’t have to snap at me.
+                    <br>[SPEAKER1] I wouldn’t if you took me seriously instead of brushing it off.
+                </td>
+                <td style="text-align: center"><audio controls=""><source src="static/wavs/task1/output_tt0327679_clip_43_higgs-base.wav" type="audio/mpeg" /></audio></td>
+                <td style="text-align: center"><audio controls=""><source src="static/wavs/task1/output_tt0327679_clip_43_higgs-sft.wav" type="audio/mpeg" /></audio></td>
+              </tr>                                                        
+            </tbody>
+          </table>
+          <div class="site-footer-item">
+            <!-- <a href="#top">Back To Top</a> -->
+          </div>
+          </div>
+
+    
+
+
+
+
+
+
+<!--BibTex citation -->
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section> -->
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
